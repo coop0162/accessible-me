@@ -1,6 +1,7 @@
+/* updated the background to white instead of grey */
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -11,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-family: "Stick No Bills", "Roboto", Helvetica, sans-serif;
 }
 
 .container {
@@ -19,9 +20,10 @@ h6 {
   margin: 0 auto;
   padding: 0 1rem;
 }
-
+/* Changed the width 100% to width 56% and height 56%  smaller image for easier see. */
 img {
-  width: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .main-nav ul {
@@ -49,7 +51,7 @@ form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 form textarea {
