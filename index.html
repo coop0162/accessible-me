@@ -20,7 +20,7 @@
 <body>
   <!-- adding the skip links to  top of page -->
   <div class="toplinkskips"> 
-    <header>
+    <header role="banner">
     <nav>
      <ul id="toppage">
        <li><a href="#Jambox">Jam Box</a></li>
@@ -46,11 +46,12 @@
       <img src="https://placekitten.com/1200/900" alt="close to kitten face " class="banner">
     </div>
 <main>
-   <article>
+   <article role="region">
     <div class="main-content">
-      <h1 id="Jambox" role="contentinfo">Welcome to Jam Box</h1>
-      <p role="contentinfo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p role="contentinfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+      <h1 id="Jambox" role="contentinfo" role="main">Welcome to Jam Box</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
     </article>
       <div class="owner">
         <h1 id="owninfo">Meet the owner</h1>
@@ -59,14 +60,14 @@
           <li itemprop="jobtitle"> CEO</li>
           <li itemprop="email"> johnjoe@jambox.ca</li>
           <li itemprop ="telephone">613-000-0000</li>
-          </li>
+          
         </ul>
         <h1>Address</h1>
         <p>
           <ul itemscope itemtype="https://schema.org/PostalAddress">
           <li itemprop="address"> Studios</li>
           <li itemprop="streetAddress">123 Guitar Road,</li>
-          <li itemprop="addressCountry"></li> Musicville,Danceistan </li>
+          <li itemprop="addressCountry">Musicville,Danceistan </li>
          <li itemprop="postalCode"> ,B3T 0L0</li>
     </ul>
         </p>
@@ -74,13 +75,13 @@
 </main>
       <div class="contact-section">
         <h1 id="contus">Contact Us</h1>
-        <form action="thanks.html">
+        <form role="form" action="thanks.html">
           <label>Full Name</label>
-          <input role="required" type="text" placeholder="Full Name">
-          <input role="required" type="text" placeholder="Email">
+          <input type="text" placeholder="Full Name">
+          <input role="form" type="text" placeholder="Email">
           <input role="required" type="text" placeholder="Subject">
           <b>Your Message</b>
-          <textarea role="required"></textarea>
+          <textarea></textarea>
           <!-- https://www.w3.org/TR/wai-aria-1.1/img/rdf_model.svg -->
           <button role="expanded" type="submit">Send</button>
         </form>
@@ -90,7 +91,8 @@
     <div class="site-footer">
       &copy; 2021 Jam Box Studios
     </footer>
-    </div> <div class="bottomlinkskips"> 
+    </div>
+     <div class="bottomlinkskips"> 
       <nav>
        <ul>
          <li><a href="#toppage">Top of Screen</a></li>
